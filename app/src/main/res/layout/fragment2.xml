@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Thong tin chi tiet sach"
+            android:textColor="@color/blue2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/image"
+            android:src="@drawable/img1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNameBook"
+            android:text="Rung Na Up"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/image"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhan xet"
+            android:id="@+id/NhanXet"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameBook"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:text="- Tôi chẳng có gì nhiều để chuyện trò với ai mà chỉ lui thui với những cuốn sách của mình. Tôi thường nhắm nghiền mắt lại, chạm tay vào một cuốn sách quen thuộc rồi rút lấy hương vị của nó vào sâu thẳm lòng mình. Thế là đủ để tôi hạnh phúc…"
+            app:layout_constraintTop_toBottomOf="@+id/NhanXet"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="7dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:text="- Một cuốn sách gối đầu giường của tôi hằng đêm"
+            app:layout_constraintTop_toBottomOf="@+id/text1"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="7dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

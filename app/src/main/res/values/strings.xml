@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test_kt2</string>
+    <string-array name="category">
+        <item>Moi xuat ban</item>
+        <item>Tai ban</item>
+
+    </string-array>
+</resources>
